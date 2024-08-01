@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'RetroComputer';
+    src: url('./morefont/retro_computer_personal_use.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    background-color: #ffffff;
+  }
+  
+  .container {
+    width: 33%;
+    margin: 0 auto;
+    background-color: #000000; 
+    padding: 20px;
+    text-align: center;
+}
+  
+  p {
+    font-family: 'RetroComputer', monospace;
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: transparent;
+    filter: blur(.3px);
+    animation: 2s ease-in-out infinite alternate pulse;
+  }
+  
+  .video {
+    margin-top: 50px;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      text-shadow:
+        rgba(255, 255, 255, .9) -.06em -.06em,
+        rgba(67, 144, 126, .9) 0 0;
+    }
+    
+    33% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+    
+    66% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.06em -.06em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+    
+    100% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+  }
+  
+  
+  
