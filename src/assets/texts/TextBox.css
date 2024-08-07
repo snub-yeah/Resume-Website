@@ -115,5 +115,93 @@
     }
   }
   
+  button {
+    font-family: 'RetroComputer', monospace;
+  margin: 0;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: transparent;
+  filter: blur(.3px);
+  animation: 2s infinite ease-in-out alternate pulse;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 100%;
+  }
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.rotating-image {
+    animation: slideIn 0.5s ease-out, rotate 3s linear infinite 0.5s;
+}
+
+@keyframes slideInFromBottom {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+.text-container {
+  animation: slideInFromBottom 0.75s ease-out;
+}
+  
+  
+  
+  @keyframes pulse {
+    0% {
+      text-shadow:
+        rgba(255, 255, 255, .9) -.06em -.06em,
+        rgba(67, 144, 126, .9) 0 0;
+    }
+    
+    33% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+    
+    66% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.06em -.06em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+    
+    100% {
+      text-shadow:
+        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(202, 69, 215, .9) 0 0;
+    }
+  }
+  
   
   

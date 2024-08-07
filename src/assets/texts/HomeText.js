@@ -2,16 +2,24 @@ import React, { useState } from 'react';
 import './TextBox.css';
 
 const HomeText = () => {
+    
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [showButtons, setShowButtons] = useState(false);
     const sentences = [
-        "Test 1",
-        "Test 2",
-        "Test 3",
-        "Test 4"
+        "Welcome to my portfolio site!",
+        "My name is Luke Wilson.",
+        "I am a computer science student at Oklahoma City University.",
+        "What do you want to hear about?"
     ];
-
     
+
+
+    const handleRepeatClick = (event) => {
+        event.stopPropagation();
+        setShowButtons(false);
+        setCurrentSentenceIndex(0);
+    };
+
     const handleClick = () => {
         if (currentSentenceIndex < sentences.length - 1) {
             setCurrentSentenceIndex(currentSentenceIndex + 1);
@@ -20,19 +28,17 @@ const HomeText = () => {
         }
     };
 
-    const handleAboutMeClick = () => {
+    const handleAboutMeClick = (event) => {
+        event.stopPropagation();
         console.log("About Me clicked");
     };
 
-    const handleExperienceClick = () => {
+    const handleExperienceClick = (event) => {
+        event.stopPropagation();
         console.log("Experience clicked");
     };
 
-    const handleRepeatClick = () => {
-        setCurrentSentenceIndex(0);
-        setShowButtons(false);
-       
-    };
+    
 
     const containerStyle = {
         width: '100%',
@@ -53,7 +59,7 @@ const HomeText = () => {
     const imageStyle = {
         position: 'absolute',
         right: '0',
-        top: '10%',
+        top: '0%',
         transform: 'translateY(-0%)',
         width: '600px', 
         height: 'auto'
