@@ -27,14 +27,20 @@
   margin-bottom: 10px;
 }
   
-  p {
+  p, button {
     font-family: 'RetroComputer', monospace;
-    margin: 0;
-    font-size: 3em;
-    text-transform: uppercase;
-    color: transparent;
-    filter: blur(.3px);
-    animation: 2s infinite ease-in-out alternate pulse;
+  margin: 0;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: transparent;
+  filter: blur(.3px);
+  animation: 2s infinite ease-in-out alternate pulse;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 100%;
   }
 
   @keyframes rotate {

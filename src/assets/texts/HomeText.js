@@ -3,15 +3,35 @@ import './TextBox.css';
 
 const HomeText = () => {
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
+    const [showButtons, setShowButtons] = useState(false);
     const sentences = [
-        "Welcome to my site...",
-        "I'm a CS student...",
-        "...",
-        "...kinda"
+        "Test 1",
+        "Test 2",
+        "Test 3",
+        "Test 4"
     ];
 
+    
     const handleClick = () => {
-        setCurrentSentenceIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+        if (currentSentenceIndex < sentences.length - 1) {
+            setCurrentSentenceIndex(currentSentenceIndex + 1);
+        } else {
+            setShowButtons(true);
+        }
+    };
+
+    const handleAboutMeClick = () => {
+        console.log("About Me clicked");
+    };
+
+    const handleExperienceClick = () => {
+        console.log("Experience clicked");
+    };
+
+    const handleRepeatClick = () => {
+        setCurrentSentenceIndex(0);
+        setShowButtons(false);
+       
     };
 
     const containerStyle = {
@@ -43,7 +63,15 @@ const HomeText = () => {
         <div style={wrapperStyle} onClick={handleClick}>
             <div className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
-                <p>{sentences[currentSentenceIndex]}</p>
+                {showButtons ? (
+                    <div>
+                        <button onClick={handleAboutMeClick}>1. About Me</button>
+                        <button onClick={handleExperienceClick}>2. Experience</button>
+                        <button onClick={handleRepeatClick}>3. Could you repeat that?</button>
+                    </div>
+                ) : (
+                    <p>{sentences[currentSentenceIndex]}</p>
+                )}
             </div>
             <img src="/images/richard.gif" alt="Animated GIF" style={imageStyle} className="rotating-image" />
         </div>
