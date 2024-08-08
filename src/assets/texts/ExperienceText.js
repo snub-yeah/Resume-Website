@@ -9,10 +9,9 @@ const HomeText = () => {
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [showButtons, setShowButtons] = useState(false);
     const sentences = [
-        "Welcome to my portfolio site!",
-        "My name is Luke Wilson.",
+        "I am a sophomore at Oklahoma City University.",
+        "My major is Computer Science with a minor in Cybersecurity.",
         "I am a computer science student at Oklahoma City University.",
-        "What do you want to hear about?"
     ];
     
 
@@ -36,9 +35,9 @@ const HomeText = () => {
         navigate('/about-me');
     };
 
-    const handleExperienceClick = (event) => {
+    const handleHomeClick = (event) => {
         event.stopPropagation();
-        navigate('/experience');
+        navigate('/');
     };
 
     
@@ -75,7 +74,7 @@ const HomeText = () => {
                 {showButtons ? (
                     <div>
                         <button onClick={handleAboutMeClick}>1. About Me</button>
-                        <button onClick={handleExperienceClick}>2. Experience</button>
+                        <button onClick={handleHomeClick}>2. Back to Home</button>
                         <button onClick={handleRepeatClick}>3. Could you repeat that?</button>
                     </div>
                 ) : (
