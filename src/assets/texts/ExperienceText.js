@@ -20,6 +20,7 @@ const HomeText = () => {
         event.stopPropagation();
         setShowButtons(false);
         setCurrentSentenceIndex(0);
+        document.getElementById("instructions").innerHTML = "CLICK TO CONTINUE"
     };
 
     const handleClick = () => {
@@ -27,6 +28,7 @@ const HomeText = () => {
             setCurrentSentenceIndex(currentSentenceIndex + 1);
         } else {
             setShowButtons(true);
+            document.getElementById("instructions").innerHTML = "SELECT AN OPTION"
         }
     };
 
@@ -69,7 +71,7 @@ const HomeText = () => {
 
     return (
         <div style={wrapperStyle} onClick={handleClick}>
-            <div className='click-to-continue'>CLICK TO CONTINUE</div>
+            <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
