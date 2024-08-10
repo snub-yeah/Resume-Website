@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
+import Resume from './Resume.pdf';
 
 const HomeText = () => {
     
@@ -9,19 +10,14 @@ const HomeText = () => {
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [showButtons, setShowButtons] = useState(false);
     const sentences = [
-        "Welcome to my portfolio site!",
-        "My name is Luke Wilson.",
-        "I am a computer science student at Oklahoma City University.",
-        "What do you want to hear about?"
+        "Which contact method would you prefer?",
     ];
     
 
 
-    const handleRepeatClick = (event) => {
+    const handleHomeClick = (event) => {
         event.stopPropagation();
-        setShowButtons(false);
-        setCurrentSentenceIndex(0);
-        document.getElementById("instructions").innerHTML = "CLICK TO CONTINUE"
+        navigate('/');
     };
 
     const handleClick = () => {
@@ -33,20 +29,11 @@ const HomeText = () => {
         }
     };
 
-    const handleAboutMeClick = (event) => {
+    const handleResumeClick = (event) => {
         event.stopPropagation();
-        navigate('/about-me');
+        window.open(Resume, '_blank');
     };
 
-    const handleExperienceClick = (event) => {
-        event.stopPropagation();
-        navigate('/experience');
-    };
-
-    const handleContactClick = (event) => {
-        event.stopPropagation();
-        navigate('/contact');
-    };
 
     
 
@@ -92,10 +79,10 @@ const HomeText = () => {
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
-                        <button onClick={handleAboutMeClick}>1. About Me</button>
-                        <button onClick={handleExperienceClick}>2. Experience</button>
-                        <button onClick={handleContactClick}>3. Contact</button>
-                        <button onClick={handleRepeatClick}>4. Could you repeat that?</button>
+                        <button onClick={handleResumeClick}>1. Resume</button>
+                        <a href="https://github.com/snub-yeah" target='_blank' rel='noreferrer'>2. Github</a>
+                        <a href="https://www.linkedin.com/in/luke-wilson-8259452a1/" target='_blank' rel='noreferrer'>3. LinkedIn</a>
+                        <button onClick={handleHomeClick}>4. Back to Home</button>
                     </div>
                 ) : (
                     <p>{sentences[currentSentenceIndex]}</p>

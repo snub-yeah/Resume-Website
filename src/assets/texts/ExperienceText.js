@@ -42,6 +42,11 @@ const HomeText = () => {
         navigate('/');
     };
 
+    const handleContactClick = (event) => {
+        event.stopPropagation();
+        navigate('/contact');
+    };
+
     
 
     const containerStyle = {
@@ -69,15 +74,27 @@ const HomeText = () => {
         height: 'auto'
     };
 
+    const gradientStyle = {
+        position: 'absolute',
+        right: '0',
+        top: '0%',
+        zIndex: '-1',
+        transform: 'translateY(-0%)',
+        width: '950px', 
+        height: 'auto'
+    };
+
     return (
         <div style={wrapperStyle} onClick={handleClick}>
+            <img src="/images/gradient.gif" alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
                         <button onClick={handleAboutMeClick}>1. About Me</button>
-                        <button onClick={handleHomeClick}>2. Back to Home</button>
-                        <button onClick={handleRepeatClick}>3. Could you repeat that?</button>
+                        <button onClick={handleContactClick}>2. Contact</button>
+                        <button onClick={handleHomeClick}>3. Back to Home</button>
+                        <button onClick={handleRepeatClick}>4. Could you repeat that?</button>
                     </div>
                 ) : (
                     <p>{sentences[currentSentenceIndex]}</p>

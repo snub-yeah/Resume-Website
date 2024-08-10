@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
-import Resume from './Resume.pdf';
+
 
 const HomeText = () => {
     
@@ -45,15 +45,16 @@ const HomeText = () => {
         navigate('/');
     };
 
-    const handleResumeClick = (event) => {
+    const handleContactClick = (event) => {
         event.stopPropagation();
-        window.open(Resume, '_blank');
+        navigate('/contact');
     };
 
     
 
     const containerStyle = {
         width: '100%',
+        zIndex: '1',
         backgroundColor: '#000000', 
         padding: '20px',
         textAlign: 'center',
@@ -72,20 +73,32 @@ const HomeText = () => {
         position: 'absolute',
         right: '0',
         top: '0%',
+        zIndex: '2',
         transform: 'translateY(-0%)',
         width: '600px', 
         height: 'auto'
     };
 
+    const gradientStyle = {
+        position: 'absolute',
+        right: '0',
+        top: '0%',
+        zIndex: '-1',
+        transform: 'translateY(-0%)',
+        width: '950px', 
+        height: 'auto'
+    };
+
     return (
         <div style={wrapperStyle} onClick={handleClick}>
+            <img src="/images/gradient.gif" alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
                         <button onClick={handleExperienceClick}>1. Experience</button>
-                        <button onClick={handleHomeClick}>2. Back to Home</button>
-                        <button onClick={handleResumeClick}>3. View Resume</button>
+                        <button onClick={handleContactClick}>2. Contact</button>
+                        <button onClick={handleHomeClick}>3. Back to Home</button>
                         <button onClick={handleRepeatClick}>4. Could you repeat that?</button>
                     </div>
                 ) : (
