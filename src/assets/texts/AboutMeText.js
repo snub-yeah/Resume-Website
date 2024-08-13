@@ -12,7 +12,8 @@ const HomeText = () => {
     const sentences = [
         "I am a sophomore at Oklahoma City University.",
         "My major is Computer Science with a minor in Cybersecurity.",
-        "I really enjoy creating art and playing video games.",
+        "I always like learning new information relating to my field.",
+        "I also enjoy creating art, playing video games, and watching TV.",
     ];
     
 
@@ -105,7 +106,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src="/images/glasses.gif" alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
+            <img src="/images/dandy.gif" alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };

@@ -101,7 +101,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src="/images/richard.gif" alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img src="/images/glasses.gif" alt="Animated GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };
