@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
+import Monocle from '../images/monocle.gif';
+import Gradient from '../images/gradient.gif';
 
 const HomeText = () => {
     
@@ -91,7 +93,7 @@ const HomeText = () => {
 
     return (
         <div style={wrapperStyle} onClick={handleClick}>
-            <img src="/images/gradient.gif" alt="Animated Portrait GIF" style={gradientStyle}/>
+            <img src={Gradient} alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
@@ -105,7 +107,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src="/images/monocle.gif" alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img src={Monocle} alt="Animated GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };
