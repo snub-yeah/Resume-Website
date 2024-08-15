@@ -2,7 +2,7 @@
   "name": "hotline-miami-website",
   "version": "0.1.0",
   "homepage": "https://snub-yeah.github.io/Resume-Website/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

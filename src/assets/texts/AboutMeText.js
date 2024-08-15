@@ -57,7 +57,6 @@ const HomeText = () => {
 
     const containerStyle = {
         width: '100%',
-        zIndex: '1',
         backgroundColor: '#000000', 
         padding: '20px',
         textAlign: 'center',
@@ -76,9 +75,8 @@ const HomeText = () => {
         position: 'absolute',
         right: '0',
         top: '0%',
-        zIndex: '2',
         transform: 'translateY(-0%)',
-        width: '600px', 
+        width: '40vw', 
         height: 'auto'
     };
 
@@ -89,7 +87,7 @@ const HomeText = () => {
         top: '0%',
         zIndex: '-1',
         transform: 'translateY(-0%)',
-        width: '950px', 
+        width: '65vw', 
         height: 'auto'
     };
 

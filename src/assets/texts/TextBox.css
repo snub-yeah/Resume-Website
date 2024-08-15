@@ -25,7 +25,7 @@
 .click-to-continue {
   animation: slideInFromBottom 0.75s ease-out;
   font-family: 'RetroComputer';
-  font-size: 1.0em;
+  font-size: 1.0vw;
   color: #888888;
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -38,7 +38,7 @@
   p {
     font-family: 'RetroComputer', monospace;
   margin: 0;
-  font-size: 3em;
+  font-size: 3vw;
   text-transform: uppercase;
   color: transparent;
   filter: blur(.3px);
@@ -128,7 +128,7 @@
   button, a {
     font-family: 'RetroComputer', monospace;
   margin: 0;
-  font-size: 3em;
+  font-size: 3vw;
   text-transform: uppercase;
   color: transparent;
   filter: blur(.3px);

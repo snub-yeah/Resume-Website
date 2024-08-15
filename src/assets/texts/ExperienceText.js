@@ -77,9 +77,10 @@ const HomeText = () => {
         right: '0',
         top: '0%',
         transform: 'translateY(-0%)',
-        width: '600px', 
+        width: '40vw', 
         height: 'auto'
     };
+
 
     const gradientStyle = {
         position: 'absolute',
@@ -87,7 +88,7 @@ const HomeText = () => {
         top: '0%',
         zIndex: '-1',
         transform: 'translateY(-0%)',
-        width: '950px', 
+        width: '65vw', 
         height: 'auto'
     };
 
