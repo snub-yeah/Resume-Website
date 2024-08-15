@@ -1,18 +1,23 @@
 {
   "files": {
     "main.css": "/Resume-Website/static/css/main.04193008.css",
-    "main.js": "/Resume-Website/static/js/main.19de49ad.js",
+    "main.js": "/Resume-Website/static/js/main.84f73e9b.js",
     "static/js/453.5c845a67.chunk.js": "/Resume-Website/static/js/453.5c845a67.chunk.js",
+    "static/media/gradient.gif": "/Resume-Website/static/media/gradient.286812bf228ac369fc77.gif",
+    "static/media/monocle.gif": "/Resume-Website/static/media/monocle.cc35519905540b1875c3.gif",
+    "static/media/glasses.gif": "/Resume-Website/static/media/glasses.86c1bd26460edbe0e99d.gif",
+    "static/media/mail.gif": "/Resume-Website/static/media/mail.dab212592818eb8ae1cb.gif",
+    "static/media/dandy.gif": "/Resume-Website/static/media/dandy.70efa492221646ac8f89.gif",
     "static/media/Resume.pdf": "/Resume-Website/static/media/Resume.ce3ef8915e92f41d509b.pdf",
     "static/media/retro_computer_personal_use.ttf": "/Resume-Website/static/media/retro_computer_personal_use.d3aa5fc07030eb5f05a3.ttf",
     "static/media/bgGradient.webp": "/Resume-Website/static/media/bgGradient.be0a6b12a0cc8a8dbfc9.webp",
     "index.html": "/Resume-Website/index.html",
     "main.04193008.css.map": "/Resume-Website/static/css/main.04193008.css.map",
-    "main.19de49ad.js.map": "/Resume-Website/static/js/main.19de49ad.js.map",
+    "main.84f73e9b.js.map": "/Resume-Website/static/js/main.84f73e9b.js.map",
     "453.5c845a67.chunk.js.map": "/Resume-Website/static/js/453.5c845a67.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04193008.css",
-    "static/js/main.19de49ad.js"
+    "static/js/main.84f73e9b.js"
   ]
 }
