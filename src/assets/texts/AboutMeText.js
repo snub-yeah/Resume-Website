@@ -80,6 +80,7 @@ const HomeText = () => {
         height: 'auto'
     };
 
+
     const gradientStyle = {
         position: 'absolute',
         right: '0',

@@ -9,9 +9,14 @@ const HomeText = () => {
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [showButtons, setShowButtons] = useState(false);
     const sentences = [
-        "I am a sophomore at Oklahoma City University.",
-        "My major is Computer Science with a minor in Cybersecurity.",
-        "I am a computer science student at Oklahoma City University.",
+        "I placed in the 90th percentile for the Spring 2024 NCL game.",
+        "Some of my projects include this website and a drawing application.",
+        "This website was created with React. The art was created using Aseprite.",
+        "The drawing application was created using Java and JavaFX.",
+        "It features variable brush sizes, an eraser... ",
+        "...a fill tool, and an undo button.",
+        "More information about my projects can be found on the contact page.",
+        "Information is available on either my github or resume."
     ];
     
 

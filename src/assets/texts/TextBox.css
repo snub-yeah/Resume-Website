@@ -6,7 +6,10 @@
   }
   
   body {
+    background-image: url('/public/images/bgGradient.webp');
     background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
 
@@ -24,9 +27,12 @@
   font-family: 'RetroComputer';
   font-size: 1.0em;
   color: #888888;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
   text-align: center;
   margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.477); 
+  padding: 10px; 
+  max-width: 300px;
 }
   
   p {
@@ -208,4 +214,4 @@
   }
   
   
-  
+

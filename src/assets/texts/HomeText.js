@@ -75,6 +75,7 @@ const HomeText = () => {
         height: 'auto'
     };
 
+
     const gradientStyle = {
         position: 'absolute',
         right: '0',
@@ -101,7 +102,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src="/images/glasses.gif" alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img src="/images/glasses.gif" alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };
