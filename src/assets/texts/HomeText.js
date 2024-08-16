@@ -5,6 +5,7 @@ import './TextBox.css';
 import Glasses from '../images/glasses.gif';
 import GlassesNotTalking from '../images/glasses.webp';
 import Border from '../images/border.webp';
+import Home from '../images/home.webp';
 
 const HomeText = () => {
     
@@ -87,7 +88,18 @@ const HomeText = () => {
         top: '0%',
         zIndex: '-1',
         transform: 'translateY(-0%)',
-        width: '65vw', 
+        width: '63vw', 
+        height: 'auto'
+    };
+
+    const backgroundImageStyle = {
+        position: 'absolute',
+        right: '0',
+        left:'0',
+        top: '0%',
+        transform: 'translateY(-0%)',
+        width: '68vw', 
+        zIndex: '-2',
         height: 'auto'
     };
 
@@ -113,6 +125,7 @@ const HomeText = () => {
                 )}
             </div>
             <img id="face" src={Glasses} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
+            <img src={Home} alt="Home Pixel Art" style={backgroundImageStyle} />
         </div>
     );
 };

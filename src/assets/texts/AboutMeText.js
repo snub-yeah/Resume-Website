@@ -128,7 +128,7 @@ const HomeText = () => {
                 )}
             </div>
             <img id="face" src={Dandy} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
-            <img src={School} alt="Animated Portrait GIF" style={backgroundImageStyle} />
+            <img src={School} alt="OCU Pixel Art" style={backgroundImageStyle} />
         </div>
     );
 };
