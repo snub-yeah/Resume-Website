@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Glasses from '../images/glasses.gif';
+import GlassesNotTalking from '../images/glasses.webp';
 import Border from '../images/border.webp';
 
 const HomeText = () => {
@@ -24,6 +25,7 @@ const HomeText = () => {
         setShowButtons(false);
         setCurrentSentenceIndex(0);
         document.getElementById("instructions").innerHTML = "CLICK TO CONTINUE"
+        document.getElementById("face").src = Glasses;
     };
 
     const handleClick = () => {
@@ -32,6 +34,7 @@ const HomeText = () => {
         } else {
             setShowButtons(true);
             document.getElementById("instructions").innerHTML = "SELECT AN OPTION"
+            document.getElementById("face").src = GlassesNotTalking;
         }
     };
 
@@ -109,7 +112,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src={Glasses} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
+            <img id="face" src={Glasses} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };

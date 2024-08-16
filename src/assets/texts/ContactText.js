@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Resume from './Resume.pdf';
 import Mail from '../images/mail.gif';
+import MailNotTalking from '../images/mail.webp';
 import Border from '../images/border.webp';
 
 const HomeText = () => {
@@ -28,6 +29,7 @@ const HomeText = () => {
         } else {
             setShowButtons(true);
             document.getElementById("instructions").innerHTML = "SELECT AN OPTION"
+            document.getElementById("face").src = MailNotTalking;
         }
     };
 
@@ -96,7 +98,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src={Mail} alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img id="face" src={Mail} alt="Animated GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };

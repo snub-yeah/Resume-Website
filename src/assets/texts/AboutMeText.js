@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Dandy from '../images/dandy.gif';
+import DandyNotTalking from '../images/dandy.webp';
 import Border from '../images/border.webp';
 import School from '../images/school.webp';
 
@@ -27,6 +28,7 @@ const HomeText = () => {
         //repeat the sentences and change the instructions
         setCurrentSentenceIndex(0);
         document.getElementById("instructions").innerHTML = "CLICK TO CONTINUE"
+        document.getElementById("face").src = Dandy;
     };
 
     const handleClick = () => {
@@ -36,6 +38,7 @@ const HomeText = () => {
             //when the user reaches the end of the sentences, show the buttons and switch the instructions
             setShowButtons(true);
             document.getElementById("instructions").innerHTML = "SELECT AN OPTION"
+            document.getElementById("face").src = DandyNotTalking;
         }
     };
 
@@ -124,7 +127,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src={Dandy} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
+            <img id="face" src={Dandy} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
             <img src={School} alt="Animated Portrait GIF" style={backgroundImageStyle} />
         </div>
     );

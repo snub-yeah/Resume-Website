@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Monocle from '../images/monocle.gif';
+import MonocleNotTalking from '../images/monocle.webp';
 import Border from '../images/border.webp';
 
 const HomeText = () => {
@@ -28,6 +29,7 @@ const HomeText = () => {
         setShowButtons(false);
         setCurrentSentenceIndex(0);
         document.getElementById("instructions").innerHTML = "CLICK TO CONTINUE"
+        document.getElementById("face").src = Monocle;
     };
 
     const handleClick = () => {
@@ -36,6 +38,7 @@ const HomeText = () => {
         } else {
             setShowButtons(true);
             document.getElementById("instructions").innerHTML = "SELECT AN OPTION"
+            document.getElementById("face").src = MonocleNotTalking;
         }
     };
 
@@ -113,7 +116,7 @@ const HomeText = () => {
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
-            <img src={Monocle} alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img id="face" src={Monocle} alt="Animated GIF" style={imageStyle} className="rotating-image" />
         </div>
     );
 };
