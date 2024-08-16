@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Resume from './Resume.pdf';
 import Mail from '../images/mail.gif';
-import Gradient from '../images/gradient.gif';
+import Border from '../images/border.webp';
 
 const HomeText = () => {
     
@@ -77,15 +77,20 @@ const HomeText = () => {
 
     return (
         <div style={wrapperStyle} onClick={handleClick}>
-            <img src={Gradient} alt="Animated Portrait GIF" style={gradientStyle}/>
+            <img src={Border} alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
+                        <div>
                         <button onClick={handleResumeClick}>1. Resume</button>
+                        </div> <div>
                         <a href="https://github.com/snub-yeah" target='_blank' rel='noreferrer'>2. Github</a>
+                        </div> <div>
                         <a href="https://www.linkedin.com/in/luke-wilson-8259452a1/" target='_blank' rel='noreferrer'>3. LinkedIn</a>
+                        </div> <div>
                         <button onClick={handleHomeClick}>4. Back to Home</button>
+                        </div>
                     </div>
                 ) : (
                     <p>{sentences[currentSentenceIndex]}</p>

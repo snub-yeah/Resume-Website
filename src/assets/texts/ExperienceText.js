@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Monocle from '../images/monocle.gif';
-import Gradient from '../images/gradient.gif';
+import Border from '../images/border.webp';
 
 const HomeText = () => {
     
@@ -94,15 +94,20 @@ const HomeText = () => {
 
     return (
         <div style={wrapperStyle} onClick={handleClick}>
-            <img src={Gradient} alt="Animated Portrait GIF" style={gradientStyle}/>
+            <img src={Border} alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
+                        <div>
                         <button onClick={handleAboutMeClick}>1. About Me</button>
+                        </div> <div>
                         <button onClick={handleContactClick}>2. Contact</button>
+                        </div> <div>
                         <button onClick={handleHomeClick}>3. Back to Home</button>
+                        </div> <div>
                         <button onClick={handleRepeatClick}>4. Could you repeat that?</button>
+                        </div>
                     </div>
                 ) : (
                     <p>{sentences[currentSentenceIndex]}</p>

@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TextBox.css';
 import Dandy from '../images/dandy.gif';
-import Gradient from '../images/gradient.gif';
+import Border from '../images/border.webp';
+import School from '../images/school.webp';
 
 
 const HomeText = () => {
@@ -76,7 +77,18 @@ const HomeText = () => {
         right: '0',
         top: '0%',
         transform: 'translateY(-0%)',
-        width: '40vw', 
+        width: '38vw', 
+        height: 'auto'
+    };
+
+    const backgroundImageStyle = {
+        position: 'absolute',
+        right: '0',
+        left:'0',
+        top: '0%',
+        transform: 'translateY(-0%)',
+        width: '68vw', 
+        zIndex: '-2',
         height: 'auto'
     };
 
@@ -93,21 +105,27 @@ const HomeText = () => {
 
     return (
         <div style={wrapperStyle} onClick={handleClick}>
-            <img src={Gradient} alt="Animated Portrait GIF" style={gradientStyle}/>
+            <img src={Border} alt="Animated Portrait GIF" style={gradientStyle}/>
             <div id="instructions" className='click-to-continue'>CLICK TO CONTINUE</div>
             <div style={containerStyle} className="text-container">
                 {showButtons ? (
                     <div>
-                        <button onClick={handleExperienceClick}>1. Experience</button>
+                        <div>
+                        <button onClick={handleExperienceClick}>1. Experience</button> 
+                        </div> <div>
                         <button onClick={handleContactClick}>2. Contact</button>
+                        </div> <div>
                         <button onClick={handleHomeClick}>3. Back to Home</button>
+                        </div> <div>
                         <button onClick={handleRepeatClick}>4. Could you repeat that?</button>
+                        </div>
                     </div>
                 ) : (
                     <p>{sentences[currentSentenceIndex]}</p>
                 )}
             </div>
             <img src={Dandy} alt="Animated Portrait GIF" style={imageStyle} className="rotating-image" />
+            <img src={School} alt="Animated Portrait GIF" style={backgroundImageStyle} />
         </div>
     );
 };

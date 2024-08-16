@@ -137,8 +137,22 @@
   border: none;
   cursor: pointer;
   text-align: center;
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
+  }
+
+  button:hover, a:hover {
+    animation: getBigger 0.4s forwards;
+    color: white;
+  }
+
+  @keyframes getBigger {
+    from {
+      font-size: 3vw;
+    }
+    to {
+      font-size: 4vw;
+    }
   }
 
   @keyframes rotate {
@@ -146,13 +160,13 @@
         transform: rotate(0deg);
     }
     25% {
-        transform: rotate(-25deg);
+        transform: rotate(-15deg);
     }
     50% {
         transform: rotate(0deg);
     }
     75% {
-        transform: rotate(25deg);
+        transform: rotate(15deg);
     }
     100% {
         transform: rotate(0deg);
@@ -190,25 +204,25 @@
   @keyframes pulse {
     0% {
       text-shadow:
-        rgba(255, 255, 255, .9) -.06em -.06em,
+        rgba(255, 255, 255, .9) -.02em -.02em,
         rgba(67, 144, 126, .9) 0 0;
     }
     
     33% {
       text-shadow:
-        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(179, 255, 251, .9) -.05em -.02em,
         rgba(202, 69, 215, .9) 0 0;
     }
     
     66% {
       text-shadow:
-        rgba(179, 255, 251, .9) -.06em -.06em,
+        rgba(179, 255, 251, .9) -.02em -.02em,
         rgba(202, 69, 215, .9) 0 0;
     }
     
     100% {
       text-shadow:
-        rgba(179, 255, 251, .9) -.15em -.15em,
+        rgba(179, 255, 251, .9) -.05em -.05em,
         rgba(202, 69, 215, .9) 0 0;
     }
   }
