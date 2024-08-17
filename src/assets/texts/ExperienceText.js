@@ -5,6 +5,7 @@ import './TextBox.css';
 import Monocle from '../images/monocle.gif';
 import MonocleNotTalking from '../images/monocle.webp';
 import Border from '../images/border.webp';
+import Experience from '../images/experience.webp';
 
 const HomeText = () => {
     
@@ -95,6 +96,17 @@ const HomeText = () => {
         height: 'auto'
     };
 
+    const backgroundImageStyle = {
+        position: 'absolute',
+        right: '0',
+        left:'0',
+        top: '0%',
+        transform: 'translateY(-0%)',
+        width: '68vw', 
+        zIndex: '-2',
+        height: 'auto'
+    };
+
     return (
         <div style={wrapperStyle} onClick={handleClick}>
             <img src={Border} alt="Animated Portrait GIF" style={gradientStyle}/>
@@ -117,6 +129,7 @@ const HomeText = () => {
                 )}
             </div>
             <img id="face" src={Monocle} alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img src={Experience} alt="Cubicle Pixel Art" style={backgroundImageStyle} />
         </div>
     );
 };

@@ -77,7 +77,7 @@ const HomeText = () => {
         right: '0',
         top: '0%',
         transform: 'translateY(-0%)',
-        width: '40vw', 
+        width: '42vw', 
         height: 'auto'
     };
 
