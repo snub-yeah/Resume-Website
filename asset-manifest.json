@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resume-Website/static/css/main.dd5a92e2.css",
-    "main.js": "/Resume-Website/static/js/main.3cf20ea7.js",
+    "main.css": "/Resume-Website/static/css/main.b177f997.css",
+    "main.js": "/Resume-Website/static/js/main.136c4049.js",
     "static/js/453.5c845a67.chunk.js": "/Resume-Website/static/js/453.5c845a67.chunk.js",
     "static/media/monocle.gif": "/Resume-Website/static/media/monocle.cc35519905540b1875c3.gif",
     "static/media/glasses.gif": "/Resume-Website/static/media/glasses.86c1bd26460edbe0e99d.gif",
@@ -11,20 +11,20 @@
     "static/media/retro_computer_personal_use.ttf": "/Resume-Website/static/media/retro_computer_personal_use.d3aa5fc07030eb5f05a3.ttf",
     "static/media/home.webp": "/Resume-Website/static/media/home.2dd456e6ab0fd180f447.webp",
     "static/media/school.webp": "/Resume-Website/static/media/school.9097e622b63d7721e1cd.webp",
+    "static/media/contact.webp": "/Resume-Website/static/media/contact.3acc255d09df40788d77.webp",
     "static/media/experience.webp": "/Resume-Website/static/media/experience.1160c83a28708ab65e1f.webp",
     "static/media/monocle.webp": "/Resume-Website/static/media/monocle.731631a3443f9d32db70.webp",
     "static/media/glasses.webp": "/Resume-Website/static/media/glasses.7cb062543b64e81311ac.webp",
     "static/media/mail.webp": "/Resume-Website/static/media/mail.16458e722b65c572e13b.webp",
     "static/media/dandy.webp": "/Resume-Website/static/media/dandy.5e7b8af961d273511d5c.webp",
-    "static/media/bgGradient.webp": "/Resume-Website/static/media/bgGradient.be0a6b12a0cc8a8dbfc9.webp",
     "index.html": "/Resume-Website/index.html",
     "static/media/border.webp": "/Resume-Website/static/media/border.4fe1fcd9d215a0851920.webp",
-    "main.dd5a92e2.css.map": "/Resume-Website/static/css/main.dd5a92e2.css.map",
-    "main.3cf20ea7.js.map": "/Resume-Website/static/js/main.3cf20ea7.js.map",
+    "main.b177f997.css.map": "/Resume-Website/static/css/main.b177f997.css.map",
+    "main.136c4049.js.map": "/Resume-Website/static/js/main.136c4049.js.map",
     "453.5c845a67.chunk.js.map": "/Resume-Website/static/js/453.5c845a67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd5a92e2.css",
-    "static/js/main.3cf20ea7.js"
+    "static/css/main.b177f997.css",
+    "static/js/main.136c4049.js"
   ]
 }
