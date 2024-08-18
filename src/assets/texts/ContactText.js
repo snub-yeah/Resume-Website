@@ -6,6 +6,7 @@ import Resume from './Resume.pdf';
 import Mail from '../images/mail.gif';
 import MailNotTalking from '../images/mail.webp';
 import Border from '../images/border.webp';
+import Contact from '../images/contact.webp';
 
 const HomeText = () => {
     
@@ -77,6 +78,18 @@ const HomeText = () => {
         height: 'auto'
     };
 
+    const backgroundImageStyle = {
+        position: 'absolute',
+        right: '0',
+        left:'0',
+        top: '0%',
+        transform: 'translateY(-0%)',
+        width: '68vw', 
+        zIndex: '-2',
+        height: 'auto'
+    };
+
+
     return (
         <div style={wrapperStyle} onClick={handleClick}>
             <img src={Border} alt="Animated Portrait GIF" style={gradientStyle}/>
@@ -99,6 +112,7 @@ const HomeText = () => {
                 )}
             </div>
             <img id="face" src={Mail} alt="Animated GIF" style={imageStyle} className="rotating-image" />
+            <img src={Contact} alt="Mail pixel art" style={backgroundImageStyle}/>
         </div>
     );
 };
