@@ -99,10 +99,10 @@ const HomeText = () => {
     const backgroundImageStyle = {
         position: 'absolute',
         right: '0',
-        left:'0',
+        left:'-0.5vw',
         top: '0%',
         transform: 'translateY(-0%)',
-        width: '68vw', 
+        width: '72vw', 
         zIndex: '-2',
         height: 'auto'
     };

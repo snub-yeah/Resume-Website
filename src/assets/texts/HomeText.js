@@ -98,7 +98,7 @@ const HomeText = () => {
         left:'0',
         top: '0%',
         transform: 'translateY(-0%)',
-        width: '68vw', 
+        width: '73vw', 
         zIndex: '-2',
         height: 'auto'
     };
